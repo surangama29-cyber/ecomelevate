@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcomElevate Consulting</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background: linear-gradient(120deg,#fdfbfb,#ebedee);
+    color:#222;
+    overflow-x:hidden;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(40px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes glow{
+    0%{box-shadow:0 0 15px rgba(255,0,150,0.4);}
+    50%{box-shadow:0 0 30px rgba(0,200,255,0.5);}
+    100%{box-shadow:0 0 15px rgba(255,0,150,0.4);}
+}
+
+/* ===== Header ===== */
+header{
+    min-height:100vh;
+    background: linear-gradient(135deg,#667eea,#764ba2,#f857a6);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 10%;
+    animation:fadeUp 1.2s ease;
+}
+
+header h1{
+    font-size:3.5rem;
+    font-weight:700;
+}
+
+header span{
+    background:linear-gradient(90deg,#ffe259,#ffa751);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+header p{
+    margin-top:20px;
+    max-width:800px;
+    font-size:1.2rem;
+    opacity:0.95;
+}
+
+header button{
+    margin-top:35px;
+    padding:14px 38px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(90deg,#00dbde,#fc00ff);
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+header button:hover{
+    transform:scale(1.08);
+}
+
+/* ===== Sections ===== */
+section{
+    padding:90px 10%;
+    animation:fadeUp 1s ease;
+}
+
+section h2{
+    font-size:2.4rem;
+    margin-bottom:25px;
+    background:linear-gradient(90deg,#667eea,#f857a6);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+section p{
+    max-width:900px;
+    font-size:1.05rem;
+    line-height:1.8;
+}
+
+/* ===== Glass Cards ===== */
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.card{
+    background:rgba(255,255,255,0.85);
+    backdrop-filter:blur(10px);
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.15);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px) scale(1.02);
+    animation:glow 2s infinite;
+}
+
+.card h3{
+    margin-bottom:12px;
+    color:#203a43;
+}
+
+.card p{
+    color:#333;
+}
+
+/* ===== Roles ===== */
+.roles ul{
+    margin-top:35px;
+    list-style:none;
+}
+
+.roles li{
+    margin-bottom:15px;
+    padding:16px 22px;
+    border-radius:14px;
+    background:linear-gradient(90deg,#667eea,#764ba2);
+    color:white;
+    box-shadow:0 8px 25px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.roles li:hover{
+    transform:translateX(12px);
+}
+
+/* ===== CTA ===== */
+.cta{
+    text-align:center;
+    padding:100px 10%;
+    background:linear-gradient(135deg,#00dbde,#fc00ff);
+    color:white;
+}
+
+.cta h2{
+    font-size:2.6rem;
+    margin-bottom:20px;
+}
+
+.cta p{
+    max-width:900px;
+    margin:auto;
+    font-size:1.1rem;
+}
+
+.cta button{
+    margin-top:35px;
+    padding:14px 40px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#fc00ff;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.cta button:hover{
+    transform:scale(1.1);
+}
+
+/* ===== Footer ===== */
+footer{
+    padding:25px;
+    text-align:center;
+    background:#0f2027;
+    color:#aaa;
+    font-size:0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1><span>EcomElevate</span> Consulting</h1>
+    <p>
+        Empowering e-commerce brands with strategy, data, creativity,
+        and profit-focused execution for sustainable growth.
+    </p>
+    <button>Explore Our Vision</button>
+</header>
+
+<section>
+    <h2>Who We Are</h2>
+    <p>
+        EcomElevate Consulting is a next-generation e-commerce consulting firm
+        designed to move beyond short-term sales tactics.
+        We blend strategy, analytics, finance, and customer understanding
+        to help businesses grow intelligently and sustainably.
+    </p>
+</section>
+
+<section>
+    <h2>What We Do</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Growth Strategy</h3>
+            <p>Long-term strategic roadmaps that prioritize sustainable scaling.</p>
+        </div>
+        <div class="card">
+            <h3>Customer Intelligence</h3>
+            <p>Deep analysis of consumer behavior to build loyalty and trust.</p>
+        </div>
+        <div class="card">
+            <h3>Profit Optimization</h3>
+            <p>Margin protection, pricing strategy, and financial discipline.</p>
+        </div>
+        <div class="card">
+            <h3>Operational Excellence</h3>
+            <p>Efficient systems and processes that enable smooth growth.</p>
+        </div>
+    </div>
+</section>
+
+<section class="roles">
+    <h2>Consulting Team Simulation</h2>
+    <p>
+        This project mirrors a real consulting firm by dividing responsibilities
+        into professional leadership roles.
+    </p>
+    <ul>
+        <li><strong>CEO:</strong> Vision, leadership, and strategic alignment</li>
+        <li><strong>Strategy Head:</strong> Market analysis and growth frameworks</li>
+        <li><strong>Data Analyst:</strong> Analytics, insights, and measurement</li>
+        <li><strong>Finance Manager:</strong> Profitability, budgeting, and control</li>
+    </ul>
+</section>
+
+<div class="cta">
+    <h2>The Future of E-Commerce Consulting</h2>
+    <p>
+        Consulting-led, data-driven, and customer-first growth is the future.
+        EcomElevate Consulting represents this transformation.
+    </p>
+    <button>View Our Approach</button>
+</div>
+
+<footer>
+    © 2026 EcomElevate Consulting | Academic Project
+</footer>
+
+</body>
+</html>
